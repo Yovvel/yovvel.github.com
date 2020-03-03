@@ -143,12 +143,15 @@ blockquote p::after {
 /*-----------------------------------------------------------------------------
 Projects section
 ------------------------------------------------------------------------------*/
+/* !!!Todo: make css grid work with other browsers
+			for ie 11: https://stackoverflow.com/questions/45786788/css-grid-layout-not-working-in-ie11-even-with-prefixes
+			Also check: https://medium.com/@elad/supporting-css-grid-in-internet-explorer-b38669e75d66*/
 #projects{
     background-color: #393e46;
     color:#fff;
-	  padding-top: 2rem;
+	padding-top: 2rem;
     padding-bottom: 2rem;
-	  justify-items: center;
+	justify-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -156,8 +159,11 @@ Projects section
 #projects-grid{
 	padding: 4rem 2rem;
 	display: grid;
+	display: -ms-grid;
 	align-items: center;
 	grid-template-columns: auto 1fr 1fr 1fr auto;
+	-ms-grid-columns: auto 1fr 1fr 1fr auto;
+	-mis-grid-rows: auto 1fr 1fr auto;
 	grid-gap: 1fr;
 
 }
@@ -178,36 +184,48 @@ Projects section
 #project1{
     grid-row: 2;
     grid-column: 2;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
     padding: 2rem;
 }
 
 #project2{
     grid-row: 2;
     grid-column: 3;
+	-ms-grid-row: 2;
+	-ms-grid-column: 3;
     padding: 2rem;
 }
 
 #project3{
     grid-row: 2;
     grid-column: 4;
+	-ms-grid-row: 2;
+	-ms-grid-column: 4;
     padding: 2rem;
 }
 
 #project4{
     grid-row: 3;
     grid-column: 2;
+	-ms-grid-row: 3;
+	-ms-grid-column: 2;
     padding: 2rem;
 }
 
 #project5{
     grid-row: 3;
     grid-column: 3;
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
     padding: 2rem;
 }
 
 #project6{
     grid-row: 3;
     grid-column: 4;
+	-ms-grid-row: 3;
+	-ms-grid-column: 4;
     padding: 2rem;
 }
 
@@ -248,156 +266,3 @@ Contact section
   color: #00adb5;
   opacity:.7;
 }
-
-
-  /*tablet screen*/
-@media only screen and (max-width: 850px) {
-  #about-section{
-    margin-top: -20px;
-    border-top: 2.5px solid #393e46;
-    display: grid;
-    padding: 15 em;
-    text-align: center;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns:10% 1fr 10%;
-  }
-  #about-section h1{
-    font-size: 5em;
-    grid-column: 1 /  5;
-    text-align: center;
-  }
-  #about-left-text{
-      grid-column: 2;
-  }
-  #about-inner-picture{
-    display: block;
-    margin:auto;
-    grid-column: 2;
-  }
-
-  #about-right-text{
-    grid-column: 2;
-
-  }
-  #about-right-text h2{
-    text-decoration: underline;
-    color: black;
-  }
-
-  #projects-grid{
-    padding: 4rem 2rem;
-    display: grid;
-    align-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: auto 1fr 1fr auto;
-    grid-gap: 1fr;
-
-  }
-
-  #project1{
-      grid-row: 1;
-      grid-column: 2;
-      padding: 2rem;
-  }
-
-  #project2{
-      grid-row: 1;
-      grid-column: 3;
-      padding: 2rem;
-  }
-
-  #project3{
-      grid-row: 2;
-      grid-column: 2;
-      padding: 2rem;
-  }
-
-  #project4{
-      grid-row: 2;
-      grid-column: 3;
-      padding: 2rem;
-  }
-
-  #project5{
-      grid-row: 3;
-      grid-column: 2;
-      padding: 2rem;
-  }
-
-  #project6{
-      grid-row: 3;
-      grid-column: 3;
-      padding: 2rem;
-  }
-}
-
-  /*Phone screen*/
-  @media only screen and (max-width: 600px) {
-    .myNavbar a {display: none;}
-    .myNavbar a.icon {
-      float: right;
-      display: block;
-    }
-
-    .myNavbar .responsive {position: relative;}
-    .myNavbar.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .myNavbar.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-
-    #avatar{
-    	border-radius: 50%;
-      width: 15em;
-      height: 15em;
-    }
-    #projects-grid{
-      padding: 4rem 2rem;
-      display: grid;
-      align-items: center;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: auto 1fr auto;
-      grid-gap: 1fr;
-    }
-
-    #project1{
-        grid-row: 1;
-        grid-column: 2;
-        padding: 2rem;
-    }
-
-    #project2{
-        grid-row: 2;
-        grid-column: 2;
-        padding: 2rem;
-    }
-
-    #project3{
-        grid-row: 3;
-        grid-column: 2;
-        padding: 2rem;
-    }
-
-    #project4{
-        grid-row: 4;
-        grid-column: 2;
-        padding: 2rem;
-    }
-
-    #project5{
-        grid-row: 5;
-        grid-column: 2;
-        padding: 2rem;
-    }
-
-    #project6{
-        grid-row: 6;
-        grid-column: 2;
-        padding: 2rem;
-    }
-  }
