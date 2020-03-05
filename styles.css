@@ -388,47 +388,61 @@ Contact section
       height: 15em;
     }
     #projects-grid{
-      padding: 4rem 2rem;
-      display: grid;
-      align-items: center;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: auto 1fr auto;
+     padding: 4rem 2rem;
+     display: grid;
+     align-items: center;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-columns: auto 1fr auto;
+	-ms-grid-columns: auto 1fr auto;
+	-mis-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
       grid-gap: 1fr;
     }
 
     #project1{
         grid-row: 1;
         grid-column: 2;
+		-ms-grid-row: 1;
+		-ms-grid-column: 2;
         padding: 2rem;
     }
 
     #project2{
         grid-row: 2;
         grid-column: 2;
+		-ms-grid-row: 2;
+		-ms-grid-column: 2;
         padding: 2rem;
     }
 
     #project3{
         grid-row: 3;
         grid-column: 2;
+		-ms-grid-row: 3;
+		-ms-grid-column: 2;
         padding: 2rem;
     }
 
     #project4{
         grid-row: 4;
         grid-column: 2;
+		-ms-grid-row: 4;
+		-ms-grid-column: 2;
         padding: 2rem;
     }
 
     #project5{
         grid-row: 5;
         grid-column: 2;
+		-ms-grid-row: 5;
+		-ms-grid-column: 2;
         padding: 2rem;
     }
 
     #project6{
         grid-row: 6;
         grid-column: 2;
+		-ms-grid-row: 6;
+		-ms-grid-column: 2;
         padding: 2rem;
     }
   }
