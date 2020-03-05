@@ -274,6 +274,15 @@ Contact section
 
   /*tablet screen*/
 @media only screen and (max-width: 850px) {
+	#welcome-inner h1{
+		font-size: 2.5em;
+	}
+	#welcome-inner h2{
+    font-size: 1.25em;
+	}
+	#welcome-inner p{
+    font-size: 0.75em;
+	}
   #about-section{
     margin-top: -20px;
     border-top: 2.5px solid #393e46;
@@ -386,7 +395,15 @@ Contact section
       display: block;
       text-align: center;
     }
-
+	#welcome-inner h1{
+		font-size: 2.5em;
+	}
+	#welcome-inner h2{
+    font-size: 1.25em;
+	}
+	#welcome-inner p{
+    font-size: 0.75em;
+	}
     #avatar{
     	border-radius: 50%;
       width: 15em;
