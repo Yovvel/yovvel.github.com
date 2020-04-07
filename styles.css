@@ -161,6 +161,10 @@ Projects section
     text-align: center;
 }
 
+#projects img{
+  width: 80%;
+}
+
 #projects-grid{
 	padding: 4rem 2rem;
 	display: grid;
@@ -468,4 +472,4 @@ Contact section
         padding: 2rem;
     }
   }
-} 
+}
