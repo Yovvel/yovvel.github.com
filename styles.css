@@ -154,8 +154,8 @@ Projects section
 #projects{
     background-color: #393e46;
     color:#fff;
-	padding-top: 2rem;
-    padding-bottom: 2rem;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
 	justify-items: center;
     justify-content: center;
     text-align: center;
@@ -179,7 +179,7 @@ Projects section
 #projects h3{
 	text-decoration: underline;
 	color:#fff;
-	margin-bottom: -15px;
+	margin-bottom: -10px;
 }
 
 #projects-header h1{
